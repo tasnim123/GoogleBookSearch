@@ -13,7 +13,7 @@ import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',
+  uri: 'https://book-project-app-demo.herokuapp.com/graphql',
     // uri: '/graphql',
 });
 
