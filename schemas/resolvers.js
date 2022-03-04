@@ -13,7 +13,7 @@ const resolvers = {
     },
     removeBook: async (parent, { bookId }) => {
       console.log(bookId);
-      const book = await Books.findOneAndDelete({ bookId: bookId });
+      const book = await Books.findOneAndDelete({ _id: bookId });
       console.log(book.bookId);
 
       return { bookId: book.bookId };
