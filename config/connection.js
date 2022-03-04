@@ -1,28 +1,3 @@
-                                                            // const mongoose = require('mongoose');
-                                                            // require("dotenv").config();
-                                                            // // require("dotenv");
-
-
-                                                            // // mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/mernbooks', {  
-
-                                                            // // this works
-                                                            //       mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://konnen23:endalkachew23@cluster0.iaodg.mongodb.net/mernbooks?retryWrites=true&w=majority', {
-                                                            // //  this works
-                                                            //       // mongoose.connect( 'mongodb+srv://konnen23:endalkachew23@cluster0.iaodg.mongodb.net/sampledbattles?retryWrites=true&w=majority', {
-
-                                                            // useNewUrlParser: true,
-                                                            // useUnifiedTopology: true,
-                                                            // useCreateIndex: true,
-                                                            // useFindAndModify: false,
-                                                            // });
-
-                                                            // module.exports = mongoose.connection;
-
-
-
-
-
-// // METH 1
 
 const mongoose = require("mongoose");
 require("dotenv").config();
@@ -30,12 +5,7 @@ require("dotenv").config();
 const dbConnection = (URI) => {
   try {
     const mongoose = require('mongoose')
-// wont Work
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/sampledbattles', {
-  // wont Work
-        // mongoose.connect( 'mongodb://localhost/sampledbattles', {
-  // this works
-  mongoose.connect('mongodb://user:user123@cluster0-shard-00-00.arwzj.mongodb.net:27017,cluster0-shard-00-01.arwzj.mongodb.net:27017,cluster0-shard-00-02.arwzj.mongodb.net:27017/bookdb?ssl=true&replicaSet=atlas-f3wnz1-shard-0&authSource=admin&retryWrites=true&w=majority', {
+mongoose.connect('mongodb://user:user123@cluster0-shard-00-00.arwzj.mongodb.net:27017,cluster0-shard-00-01.arwzj.mongodb.net:27017,cluster0-shard-00-02.arwzj.mongodb.net:27017/bookdb?ssl=true&replicaSet=atlas-f3wnz1-shard-0&authSource=admin&retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
